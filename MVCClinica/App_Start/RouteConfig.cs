@@ -15,20 +15,20 @@ namespace MVCClinica
 
             routes.MapRoute(
                 name: "Especialidad",
-                url: "{controller}/{action}/{especialidad}",
+                url: "{controller}/traerespecialidad/{especialidad}",
                 defaults: new
                 {
                     controller = "Medico",
                     action = "BuscarEspecialidad"
                 });
-            routes.MapRoute(
-                name: "NombreApellido",
-                url: "{controller}/traerMedico/{nombre}/{apellido}",
-                defaults: new
-                {
-                    controller = "Medico",
-                    action = "BuscarNombreApellido"
-                });
+            //routes.MapRoute(
+            //    name: "NombreApellido",
+            //    url: "{controller}/traerMedico/{nombre}/{apellido}",
+            //    defaults: new
+            //    {
+            //        controller = "Medico",
+            //        action = "BuscarNombreApellido"
+            //    });
 
             routes.MapRoute(
                 name: "Default",
