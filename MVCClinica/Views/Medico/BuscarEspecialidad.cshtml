@@ -1,0 +1,19 @@
+﻿
+@model MVCClinica.Models.Medico
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BuscarEspecialidad</title>
+</head>
+<body>
+    <p>Traer por especialidad</p>
+    @using (Html.BeginForm("BuscarEspecialidad", "Medico", FormMethod.Get)) 
+    { 
+        @Html.TextBox("especialidad","")
+        <input type="submit" value="Buscar Especialidad"/>
+    }
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿
+@model MVCClinica.Models.Medico
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BuscarNombreApellido</title>
+</head>
+<body>
+    <p>Buscar por Nombre y Apellido</p>
+    @using (Html.BeginForm("BuscarNombreApellido", "Medico", FormMethod.Get))
+    {
+        @Html.TextBox("nombre", "")
+        @Html.TextBox("apellido", "")
+        <input type="submit" value="Buscar Nombre Apellido"/>
+    }
+</body>
+</html>
